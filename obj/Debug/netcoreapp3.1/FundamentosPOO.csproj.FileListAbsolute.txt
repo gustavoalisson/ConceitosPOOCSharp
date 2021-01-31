@@ -1,0 +1,13 @@
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\bin\Debug\netcoreapp3.1\FundamentosPOO.exe
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\bin\Debug\netcoreapp3.1\FundamentosPOO.deps.json
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\bin\Debug\netcoreapp3.1\FundamentosPOO.runtimeconfig.json
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\bin\Debug\netcoreapp3.1\FundamentosPOO.runtimeconfig.dev.json
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\bin\Debug\netcoreapp3.1\FundamentosPOO.dll
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\bin\Debug\netcoreapp3.1\FundamentosPOO.pdb
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\obj\Debug\netcoreapp3.1\FundamentosPOO.csprojAssemblyReference.cache
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\obj\Debug\netcoreapp3.1\FundamentosPOO.AssemblyInfoInputs.cache
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\obj\Debug\netcoreapp3.1\FundamentosPOO.AssemblyInfo.cs
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\obj\Debug\netcoreapp3.1\FundamentosPOO.csproj.CoreCompileInputs.cache
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\obj\Debug\netcoreapp3.1\FundamentosPOO.dll
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\obj\Debug\netcoreapp3.1\FundamentosPOO.pdb
+C:\Users\Alisson Gustavo\source\repos\FundamentosPOO\FundamentosPOO\obj\Debug\netcoreapp3.1\FundamentosPOO.genruntimeconfig.cache
