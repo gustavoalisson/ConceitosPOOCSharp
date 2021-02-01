@@ -12,14 +12,14 @@ namespace FundamentosPOO
             Console.WriteLine("-------Conta bancária-------");
 
             // criação do objeto = instância da classe Conta
-            Conta conta1 = new Conta();
+            Conta conta1 = new Conta(3590);
 
             conta1.AdicionarLimite(1000);
 
             conta1.Deposita(2000);
             conta1.Deposita(5000);
 
-            validaSaque = conta1.Saca(50000);
+            validaSaque = conta1.Saca(1200);
 
             if (validaSaque)
             {
@@ -27,6 +27,7 @@ namespace FundamentosPOO
 
                 Console.WriteLine("Saldo disponível: " + saldoTotal);
                 Console.WriteLine("Limite disponível: " + conta1.Limite);
+                Console.WriteLine("O número da sua conta é: " + conta1.Numero);
             }
           
         }

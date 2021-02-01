@@ -6,9 +6,21 @@ namespace FundamentosPOO
 {
     public class Conta
     {
+
+        public Conta(int numero)
+        {
+            this.Numero = numero;
+        }
+
+        public Conta()
+        {
+
+        }
+
         private double Saldo { get; set; }
         public double Limite { get; private set; }
-        public int Numero { get; set; }
+        public int Numero { get; private set; }
+
 
         //Metodos
         public void Deposita(double valor)
