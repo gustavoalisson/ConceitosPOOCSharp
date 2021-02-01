@@ -6,23 +6,27 @@ namespace FundamentosPOO
 {
     public class Conta
     {
-
-        public Conta(int numero)
+        //Metodo construtor
+        public Conta(int numero, int limite)
         {
             this.Numero = numero;
-        }
-
-        public Conta()
-        {
-
+            this.Limite = limite;
+            Conta.TotalContasCriadas++;
         }
 
         private double Saldo { get; set; }
         public double Limite { get; private set; }
         public int Numero { get; private set; }
+        // atributo estático = faz parte da minha classe Conta e não da instância (vive na classe)
+        public static int TotalContasCriadas { get; set; }
 
 
         //Metodos
+        public static int ProximoTotalContasCriadas()
+        {
+            return Conta.TotalContasCriadas + 1;
+        }
+
         public void Deposita(double valor)
         {
             this.Saldo = this.Saldo + valor;
