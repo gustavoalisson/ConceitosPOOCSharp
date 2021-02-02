@@ -6,6 +6,34 @@ namespace FundamentosPOO
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("Estudando POO");
+
+            AnalistaDeTI analistaDeTI = new AnalistaDeTI();
+            GerenteDeTI gerenteDeTI = new GerenteDeTI();
+
+            analistaDeTI.Nome = "Alisson Gustavo";
+            analistaDeTI.Salario = 4500;
+
+            Console.WriteLine($"Salário do analista de TI {analistaDeTI.Nome} é {analistaDeTI.Salario} ");
+
+            analistaDeTI.Reajustar();
+
+            Console.WriteLine($"O salário de {analistaDeTI.Nome} foi reajustado para {analistaDeTI.Salario}");
+
+            Console.WriteLine("__________________________________________________________________");
+
+            gerenteDeTI.Nome = "Gustavo Barbosa";
+            gerenteDeTI.Salario = 14000;
+
+            Console.WriteLine($"Salário do Gerente de TI {gerenteDeTI.Nome} é {gerenteDeTI.Salario} ");
+
+            gerenteDeTI.Reajustar();
+
+            Console.WriteLine($"O salário de {gerenteDeTI.Nome} foi reajustado para {gerenteDeTI.Salario}");
+
+
+            Console.WriteLine("--------------------------------------------------------");
+
             Console.WriteLine("------- Conta bancária -------");
 
             double saldoTotal = 0;
