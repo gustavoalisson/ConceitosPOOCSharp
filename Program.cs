@@ -6,12 +6,26 @@ namespace FundamentosPOO
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("-------Conta bancária-------");
-
+            Console.WriteLine("------- Conta bancária -------");
 
             double saldoTotal = 0;
             bool validaSaque;
 
+            Console.WriteLine("------- Conta Poupança -------");
+
+            ContaPoupanca cp = new ContaPoupanca(154, 0);
+
+            cp.Deposita(1500);
+            cp.Saca(500);
+
+            double saldoPoupanca = cp.ConsultaSaldoDisponivel();
+
+            Console.WriteLine("Saldo na poupança: " + saldoPoupanca);
+            Console.WriteLine("Limite da poupança: " + cp.Limite);
+            cp.MostrarNumeroConta();
+
+
+            Console.WriteLine("--------------------------------------------------------");
 
             // criação do objeto = instância da classe Conta
             Conta conta1 = new Conta(3590, 1000);

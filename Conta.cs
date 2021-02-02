@@ -1,13 +1,12 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+
 
 namespace FundamentosPOO
 {
     public class Conta
     {
         //Metodo construtor
-        public Conta(int numero, int limite)
+        public Conta(int numero, double limite)
         {
             this.Numero = numero;
             this.Limite = limite;
