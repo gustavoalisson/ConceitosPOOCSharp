@@ -3,7 +3,8 @@
 
 namespace FundamentosPOO
 {
-    public class Conta
+    // essa classe não pode ser instanciada, pois ela é abstrata
+    public abstract class Conta : IConta // implementação
     {
         //Metodo construtor
         public Conta(int numero, double limite)
@@ -13,7 +14,7 @@ namespace FundamentosPOO
             Conta.TotalContasCriadas++;
         }
 
-        private double Saldo { get; set; }
+        protected double Saldo { get; set; }
         public double Limite { get; private set; }
         public int Numero { get; private set; }
         // atributo estático = faz parte da minha classe Conta e não da instância (vive na classe)
@@ -31,7 +32,8 @@ namespace FundamentosPOO
             this.Saldo = this.Saldo + valor;
         }
 
-        public bool Saca(double valor)
+        // virtual =  permite que outras classe que herda seja sobrescrito
+        public virtual bool Saca(double valor)
         {
             double saldoDisponivel = this.ConsultaSaldoDisponivel();
             
