@@ -8,103 +8,120 @@ namespace FundamentosPOO
         {
             Console.WriteLine("Estudando POO");
 
-            AnalistaDeTI analistaDeTI = new AnalistaDeTI();
-            GerenteDeTI gerenteDeTI = new GerenteDeTI();
+            ContaPoupanca cp = new ContaPoupanca(189, 0);
 
-            analistaDeTI.Nome = "Alisson Gustavo";
-            analistaDeTI.Salario = 4500;
+            cp.Deposita(600);
+            cp.Saca(25);
+            double saldoDisponivel = cp.ConsultaSaldoDisponivel();
 
-            Console.WriteLine($"Salário do analista de TI {analistaDeTI.Nome} é {analistaDeTI.Salario} ");
+            Console.WriteLine("Saldo poupança: " + saldoDisponivel);
 
-            analistaDeTI.Reajustar();
+            ContaCorrente cc = new ContaCorrente(102, 100);
 
-            Console.WriteLine($"O salário de {analistaDeTI.Nome} foi reajustado para {analistaDeTI.Salario}");
+            cc.Deposita(100);
+            cc.Saca(10);
+            saldoDisponivel = cc.ConsultaSaldoDisponivel();
 
-            Console.WriteLine("__________________________________________________________________");
+            
+            Console.WriteLine("Saldo corrente: " + saldoDisponivel);
 
-            gerenteDeTI.Nome = "Gustavo Barbosa";
-            gerenteDeTI.Salario = 14000;
+            //// Criação dos objetos
+            //AnalistaDeTI analistaDeTI = new AnalistaDeTI();
+            //GerenteDeTI gerenteDeTI = new GerenteDeTI();
 
-            Console.WriteLine($"Salário do Gerente de TI {gerenteDeTI.Nome} é {gerenteDeTI.Salario} ");
+            //analistaDeTI.Nome = "Alisson Gustavo";
+            //analistaDeTI.Salario = 4500;
 
-            gerenteDeTI.Reajustar();
+            //Console.WriteLine($"Salário do analista de TI {analistaDeTI.Nome} é {analistaDeTI.Salario} ");
 
-            Console.WriteLine($"O salário de {gerenteDeTI.Nome} foi reajustado para {gerenteDeTI.Salario}");
+            //analistaDeTI.Reajustar();
 
+            //Console.WriteLine($"O salário de {analistaDeTI.Nome} foi reajustado para {analistaDeTI.Salario}");
 
-            Console.WriteLine("--------------------------------------------------------");
+            //Console.WriteLine("__________________________________________________________________");
 
-            Console.WriteLine("------- Conta bancária -------");
+            //gerenteDeTI.Nome = "Gustavo Barbosa";
+            //gerenteDeTI.Salario = 14000;
 
-            double saldoTotal = 0;
-            bool validaSaque;
+            //Console.WriteLine($"Salário do Gerente de TI {gerenteDeTI.Nome} é {gerenteDeTI.Salario} ");
 
-            Console.WriteLine("------- Conta Poupança -------");
+            //gerenteDeTI.Reajustar();
 
-            ContaPoupanca cp = new ContaPoupanca(154, 0);
-
-            cp.Deposita(1500);
-            cp.Saca(500);
-
-            double saldoPoupanca = cp.ConsultaSaldoDisponivel();
-
-            Console.WriteLine("Saldo na poupança: " + saldoPoupanca);
-            Console.WriteLine("Limite da poupança: " + cp.Limite);
-            cp.MostrarNumeroConta();
+            //Console.WriteLine($"O salário de {gerenteDeTI.Nome} foi reajustado para {gerenteDeTI.Salario}");
 
 
-            Console.WriteLine("--------------------------------------------------------");
+            //Console.WriteLine("--------------------------------------------------------");
 
-            // criação do objeto = instância da classe Conta
-            Conta conta1 = new Conta(3590, 1000);
-            Conta conta2 = new Conta(158, 4000);
-            Conta conta3 = new Conta(123, 700);
-            Conta conta4 = new Conta(511, 960);
+            //Console.WriteLine("------- Conta bancária -------");
 
-            conta1.Deposita(2000);
-            conta1.Deposita(5000);
+            //double saldoTotal = 0;
+            //bool validaSaque;
 
-            validaSaque = conta1.Saca(1200);
+            //Console.WriteLine("------- Conta Poupança -------");
 
-            if (validaSaque)
-            {
-                saldoTotal = conta1.ConsultaSaldoDisponivel();
+            //ContaPoupanca cp = new ContaPoupanca(154, 0);
 
-                Console.WriteLine("Saldo disponível: " + saldoTotal);
-                Console.WriteLine("Limite disponível: " + conta1.Limite);
-                Console.WriteLine("O número da sua conta é: " + conta1.Numero);
-            }
+            //cp.Deposita(1500);
+            //cp.Saca(500);
 
-            Console.WriteLine("--------------------------------------------------------");
+            //double saldoPoupanca = cp.ConsultaSaldoDisponivel();
+
+            //Console.WriteLine("Saldo na poupança: " + saldoPoupanca);
+            //Console.WriteLine("Limite da poupança: " + cp.Limite);
+            //cp.MostrarNumeroConta();
+
+
+            //Console.WriteLine("--------------------------------------------------------");
+
+            //// criação do objeto = instância da classe Conta
+            //Conta conta1 = new Conta(3590, 1000);
+            //Conta conta2 = new Conta(158, 4000);
+            //Conta conta3 = new Conta(123, 700);
+            //Conta conta4 = new Conta(511, 960);
+
+            //conta1.Deposita(2000);
+            //conta1.Deposita(5000);
+
+            //validaSaque = conta1.Saca(1200);
+
+            //if (validaSaque)
+            //{
+            //    saldoTotal = conta1.ConsultaSaldoDisponivel();
+
+            //    Console.WriteLine("Saldo disponível: " + saldoTotal);
+            //    Console.WriteLine("Limite disponível: " + conta1.Limite);
+            //    Console.WriteLine("O número da sua conta é: " + conta1.Numero);
+            //}
+
+            //Console.WriteLine("--------------------------------------------------------");
            
-            int totalContas = Conta.ProximoTotalContasCriadas();
+            //int totalContas = Conta.ProximoTotalContasCriadas();
 
-            Console.WriteLine("Número de contas criadas: " + Conta.TotalContasCriadas);
-            Console.WriteLine("Próximo total de contas criadas: " + totalContas);
+            //Console.WriteLine("Número de contas criadas: " + Conta.TotalContasCriadas);
+            //Console.WriteLine("Próximo total de contas criadas: " + totalContas);
 
 
+            ////Criação dos objetos
+            //CartaoDeCredito cartao = new CartaoDeCredito();
+            //Cliente cliente1 = new Cliente();
 
-            //Criação dos objetos
-            CartaoDeCredito cartao = new CartaoDeCredito();
-            Cliente cliente1 = new Cliente();
+            //// Nome do cliente
+            //cliente1.Nome = "Alisson Gustavo";
 
-            // Nome do cliente
-            cliente1.Nome = "Alisson Gustavo";
+            //// Adicionar número e validade do cartão 
+            //cartao.Numero = "5567 7865 9798 4002";
+            //cartao.DataValidade = "01/12/2021";
+            //cartao.CodigoSeguranca = 263;
 
-            // Adicionar número e validade do cartão 
-            cartao.Numero = "5567 7865 9798 4002";
-            cartao.DataValidade = "01/12/2021";
-            cartao.CodigoSeguranca = 263;
+            //cartao.Cliente = cliente1;
 
-            cartao.Cliente = cliente1;
+            //Console.WriteLine("--------------------------------------------------------");
 
-            Console.WriteLine("--------------------------------------------------------");
-
-            Console.WriteLine("O nome do cliente é: " + cliente1.Nome);
-            Console.WriteLine("Número do cartão: " + cartao.Numero);
-            Console.WriteLine("Data de validade: " + cartao.DataValidade);
-            Console.WriteLine("Código de segurança: " + cartao.CodigoSeguranca);
-            Console.WriteLine("Nome do cliente agragado ao cartão: " + cartao.Cliente.Nome);
+            //Console.WriteLine("O nome do cliente é: " + cliente1.Nome);
+            //Console.WriteLine("Número do cartão: " + cartao.Numero);
+            //Console.WriteLine("Data de validade: " + cartao.DataValidade);
+            //Console.WriteLine("Código de segurança: " + cartao.CodigoSeguranca);
+            //Console.WriteLine("Nome do cliente agragado ao cartão: " + cartao.Cliente.Nome);
 
 
         }
