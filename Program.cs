@@ -8,22 +8,35 @@ namespace FundamentosPOO
         {
             Console.WriteLine("Estudando POO");
 
-            ContaPoupanca cp = new ContaPoupanca(189, 0);
+            AnalistaDeTI analistaDeTI = new AnalistaDeTI();
 
-            cp.Deposita(600);
-            cp.Saca(25);
-            double saldoDisponivel = cp.ConsultaSaldoDisponivel();
+            analistaDeTI.AdicionarNome("Alisson", "Gustavo");
+            analistaDeTI.AdicionarSalario(2000);
 
-            Console.WriteLine("Saldo poupança: " + saldoDisponivel);
+           
+            analistaDeTI.Reajustar();
 
-            ContaCorrente cc = new ContaCorrente(102, 100);
 
-            cc.Deposita(100);
-            cc.Saca(10);
-            saldoDisponivel = cc.ConsultaSaldoDisponivel();
+            Console.WriteLine("O salário é: " + analistaDeTI.Salario);
+
+
+
+            //ContaPoupanca cp = new ContaPoupanca(189, 0);
+
+            //cp.Deposita(600);
+            //cp.Saca(25);
+            //double saldoDisponivel = cp.ConsultaSaldoDisponivel();
+
+            //Console.WriteLine("Saldo poupança: " + saldoDisponivel);
+
+            //ContaCorrente cc = new ContaCorrente(102, 100);
+
+            //cc.Deposita(100);
+            //cc.Saca(10);
+            //saldoDisponivel = cc.ConsultaSaldoDisponivel();
 
             
-            Console.WriteLine("Saldo corrente: " + saldoDisponivel);
+            //Console.WriteLine("Saldo corrente: " + saldoDisponivel);
 
             //// Criação dos objetos
             //AnalistaDeTI analistaDeTI = new AnalistaDeTI();
